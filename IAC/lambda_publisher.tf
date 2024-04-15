@@ -36,7 +36,7 @@ resource "aws_iam_policy" "lambda_publisher_policy" {
       Effect   = "Allow",
       Action   = [
         "logs:*",
-        "sns:Publish"
+        "sns:*"
       ]
       Resource = [
         "arn:aws:logs:*:*:*",
